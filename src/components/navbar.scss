@@ -1,0 +1,67 @@
+@import "../app.scss";
+
+.navbar{
+    height: 100px;
+    
+   
+   
+   
+
+    .wrapper {
+      font-family: "Voyage";
+      max-width: 1366px;
+      margin-left: 150px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      margin-top: 20px;
+      gap: 950px;
+    
+      @include mobile {
+       align-items: end;
+       justify-content: flex-end; 
+       // Adjust the gap as needed for mobile
+      }
+    
+  
+
+    span{
+      font-size: 3vh;
+      font-family: Anurati;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .3rem;
+
+      @include mobile{
+        display: none;
+    }
+
+     
+      
+    }
+    .sociallinks{
+        display: flex;
+        gap: 10px;
+
+        @include mobile {
+          align-items: end;
+          justify-content: flex-end;
+          margin-right: 0; 
+          // Adjust the gap as needed for mobile
+         }
+
+
+         
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+       
+         
+    
+    }
+
+  }
+}

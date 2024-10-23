@@ -1,0 +1,126 @@
+ @import "../../app.scss";
+
+
+ .contact {
+  height: 100%;
+  margin-left: 150px;
+  max-width: 1366px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-family: "wargika";
+
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 0px;
+    height: 100%;
+    
+  }
+}
+
+.textcontainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: px; 
+
+
+  @include mobile {
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px
+  }
+  h2{
+    font-family: JetBrains Mono;
+  }
+ 
+}
+
+.textcontainer h1 {
+  font-size: 90px;
+  line-height: 80px;
+  font-family: wargika;
+ 
+
+  @include mobile {
+  font-size: 30px;
+  }
+
+  .textcontainer h2{
+    font-family: "wargika";
+  }
+}
+
+
+.textcontainer span {
+  font-weight: 400;
+  font-family: Poppins;
+  padding-top: 60px;
+  
+}
+
+.formcontainer {
+  flex: 1;
+  
+
+  @include mobile {
+    width: 80%;
+  }
+}
+
+.formcontainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding-right: 20px;
+
+}
+
+.formcontainer form input,textarea {
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-family: JetBrains Mono;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  
+}
+
+// .formcontainer form  {
+//   padding: 10px;
+//   border: 1px solid gray;
+//   padding-bottom: 70px;
+//   background-color: transparent;
+//   border-radius: 5px;
+  
+//   color: white;
+// }
+
+.formcontainer form button{
+  padding: 15px 30px;
+  background-color: #ea7807;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: JetBrains Mono;
+  cursor: pointer;
+
+  @include mobile {
+    padding: 10px;
+    overflow-y: hidden;
+    
+
+  }
+}
+
+

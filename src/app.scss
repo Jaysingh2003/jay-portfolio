@@ -1,0 +1,42 @@
+ html{
+    scroll-snap-type: y mandatory; /* Forces snap alignment in vertical direction */
+    overflow-y: scroll;
+    height: 100vh; /* Full viewport height */
+
+    
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "poppins";
+   
+}
+Section{
+    height: 100vh;
+    scroll-snap-align: center;
+
+}
+
+@mixin mobile{
+    @media(max-width: 738px){
+    @content;
+    }
+}
+
+@mixin tablet{
+    @media(max-width: 1024px){
+    @content;
+    }
+}
+
+@mixin desktop{
+    @media(max-width: 1366px){
+    @content;
+    }
+}
+
